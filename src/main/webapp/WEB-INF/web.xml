@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>com.httpweb2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  	
+  	<context-param>
+  		<param-name>driver</param-name>
+  		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+  
+    <context-param>
+  		<param-name>URL</param-name>
+  		<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+  </context-param>
+  
+    <context-param>
+  		<param-name>user</param-name>
+  		<param-value>system</param-value>
+  </context-param>
+  
+    <context-param>
+  		<param-name>password</param-name>
+  		<param-value>vine96</param-value>
+  </context-param>
+  	
+  
+	<servlet>
+		<servlet-name>LoginSer</servlet-name>
+		<servlet-class>LoginSer</servlet-class>
+	</servlet>	 
+  	<servlet-mapping>
+  		<servlet-name>LoginSer</servlet-name>
+  		<url-pattern>/LoginSer</url-pattern>
+  	</servlet-mapping>
+  	 
+  	 <servlet>
+		<servlet-name>RegisterSer</servlet-name>
+		<servlet-class>RegisterSer</servlet-class>
+	</servlet>	 
+  	<servlet-mapping>
+  		<servlet-name>RegisterSer</servlet-name>
+  		<url-pattern>/RegisterSer</url-pattern>
+  	</servlet-mapping>
+  	
+  	  	 <servlet>
+		<servlet-name>FetchProfile</servlet-name>
+		<servlet-class>FetchProfile</servlet-class>
+	</servlet>	 
+  	<servlet-mapping>
+  		<servlet-name>FetchProfile</servlet-name>
+  		<url-pattern>/FetchProfile</url-pattern>
+  	</servlet-mapping>
+  	
+ 	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>Logout</servlet-class>
+	</servlet>	 
+  	<servlet-mapping>
+  		<servlet-name>Logout</servlet-name>
+  		<url-pattern>/Logout</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-name>Editreturn</servlet-name>
+		<servlet-class>Editreturn</servlet-class>
+	</servlet>	 
+  	<servlet-mapping>
+  		<servlet-name>Editreturn</servlet-name>
+  		<url-pattern>/Editreturn</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+		<servlet-name>EditServlet</servlet-name>
+		<servlet-class>EditServlet</servlet-class>
+	</servlet>	 
+  	<servlet-mapping>
+  		<servlet-name>EditServlet</servlet-name>
+  		<url-pattern>/EditServlet</url-pattern>
+  	</servlet-mapping>
+  	
+  	  	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>Delete</servlet-class>
+	</servlet>	 
+  	<servlet-mapping>
+  		<servlet-name>Delete</servlet-name>
+  		<url-pattern>/Delete</url-pattern>
+  	</servlet-mapping>  	
+  	
+</web-app>
